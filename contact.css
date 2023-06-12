@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+html, body {
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+body {
+    height: 80vh;
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* **********N A V B A R*********** */
+
+.nav {
+    height: 40px;
+}
+
+.primary-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+  }
+  
+  /* ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+  } */
+
+  .primary-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    text-align: center;
+  }
+  
+  .primary-nav > ul > li {
+    list-style: none;
+    margin-right: 50px;
+  }
+
+
+/* **********C O N T E N T*********** */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 55%;
+    /* margin-top: -100px; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactMeTitle {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 20px;
+    color: #00599A;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 150px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon {
+    text-align: center;
+}
+
+.phone, .email {
+    text-align: center;
+}
+
+.phoneBox {
+    margin: 30px 0;
+}
+
+.textBox {
+    margin: 5px 0;
+}
+
+.btn {
+    margin: 10px 0;
+    padding: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 210px;
+}
+
+.wrapper {
+    list-style: none;
+    display: flex;
+}
+
+.icon-link {
+    color:rgba(0, 0, 0)
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+
+* *:focus,
+  *:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+.wrapper .footerIcon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 25px;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+.wrapper .footerIcon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+  }
+  
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+  }
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: lightgray;
+  color: #ffffff;
+}
+
+.wrapper .email:hover,
+.wrapper .email:hover .tooltip,
+.wrapper .email:hover .tooltip::before {
+  background: lightskyblue;
+  color: #ffffff;
+}
+
+
+/* media queries */
+
+/* @media (max-width: 786px) {
+
+    .contactMeTitle {
+        font-size: 50px;
+    }
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 767px) {
+    /* Styles specific to mobile devices */
+    
+    /* Example styles: */
+    .nav {
+      height: 60px; /* Increase height of the navigation for better touch interaction */
+    }
+  
+    .primary-nav {
+      width: 100%; /* Make the navigation take up the full width of the screen */
+    }
+  
+    .primary-nav ul {
+      flex-direction: column; /* Stack the navigation items vertically */
+    }
+  
+    .primary-nav li {
+      margin-bottom: 10px; /* Add spacing between each navigation item */
+    }
+  
+    /* Hide the footer */
+    .footerContainer {
+      display: none;
+    }
+  }
+
+  /* Media queries for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles specific to tablets */
+    
+    /* Example styles: */
+    .nav {
+      height: 80px; /* Adjust the height of the navigation for better touch interaction */
+    }
+  
+    /* Modify other styles as needed for tablet devices */
+  }
+  
+  /* Media queries for laptops and desktops */
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    /* Styles specific to laptops and desktops */
+    
+    /* Example styles: */
+    .nav {
+      height: 100px; /* Adjust the height of the navigation for better visibility */
+    }
+  
+    /* Modify other styles as needed for laptop and desktop devices */
+  }
+  
+  /* Media queries for big screens */
+  @media only screen and (min-width: 1440px) {
+    /* Styles specific to big screens */
+    
+    /* Example styles: */
+    .nav {
+      height: 120px; /* Adjust the height of the navigation for better visibility */
+    }
+  
+    /* Modify other styles as needed for big screens */
+  }
+
