@@ -201,7 +201,7 @@ span {
     grid-row-end: 13;
     grid-column-end: 6;
     
-    margin-top: -260px;
+    margin-top: -220px;
  }
 
  .languagesList {
@@ -212,7 +212,7 @@ span {
     grid-row-end: 15;
     grid-column-end: 6;
 
-    margin-top: -270px;
+    margin-top: -230px;
  }
 
 
@@ -308,6 +308,113 @@ span {
  .volunteering {
    font-size: .5em;
  }
+
+ /* MOBILE */
+
+
+ /* .resumeGrid {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(16, 1fr);
+   grid-template-areas: 
+   "nameAndTitle"
+   "contactTitle"
+   "contactInfo"
+   "skillsTitle"
+   "skillsList"
+   "educationTitle"
+   "educationList"
+   "languages"
+   "languagesList "
+   "summary"
+   "summaryText"
+   "experience"
+   "experienceList"
+   "activities"
+   "activitiesList"
+} */
+
+
+/* LAPTOP */
+
+
+
+/*  
+
+@media (min-width: 576px) {
+   .resumeGrid {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: repeat(4, 1fr);
+       grid-template-areas: 
+       "nameAndTitle"
+       "contactTitle contactTitle"
+       "contactInfo contactInfo"
+       "skillsTitle"
+       "skillsList"
+       "educationTitle"
+       "educationList"
+       "languages"
+       "languagesList "
+       "summary"
+       "summaryText"
+       "experience"
+       "experienceList"
+       "activities"
+       "activitiesList"
+       ;
+   }
+
+   h1 {
+       font-size: 50px;
+   }
+
+   .one, .two, .three {
+       background: rgb(31, 30, 30);
+   }
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+   .resumeGrid {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "nameAndTitle"
+       "contactTitle contactTitle"
+       "contactInfo contactInfo"
+       "skillsTitle"
+       "skillsList"
+       "educationTitle"
+       "educationList"
+       "languages"
+       "languagesList "
+       "summary"
+       "summaryText"
+       "experience"
+       "experienceList"
+       "activities"
+       "activitiesList";
+   }
+   h1 {
+       font-size: 50px;
+   }
+
+   .one, .two, .three {
+       background: rgb(31, 30, 30);
+   }
+}
+
+
+*/
+
+
 
 
 
